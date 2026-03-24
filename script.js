@@ -6,7 +6,7 @@ const category = document.getElementById("category")
 
 //Caputurando elementos da lista.
 const expenseList = document.querySelector("ul")
-const exepensesQuantity = document.querySelector("aside header p span")
+const expensesQuantity = document.querySelector("aside header p span")
 const expensesTotal = document.querySelector("aside header h2")
 
 // Captura o evento de input para formatar o  valor.
@@ -94,7 +94,7 @@ function updateTotals() {
     //Recupera todos os itens da lista.
     const items = expenseList.children
 
-    exepensesQuantity.textContent = `${items.length} ${items.length > 1 ? "despesas" : "despesa"}`
+    expensesQuantity.textContent = `${items.length} ${items.length > 1 ? "despesas" : "despesa"}`
 
     let total = 0
     for(let item = 0; item < items.length; item++) {
